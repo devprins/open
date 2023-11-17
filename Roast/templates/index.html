@@ -1,0 +1,20 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Friend Roast</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>Hey there, <span id="friendName">Mariya</span>!</p>
+        <p id="roastText">Ready for a roast?</p>
+        <button onclick="roastMariya()">Yes!</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
